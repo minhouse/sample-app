@@ -1,4 +1,3 @@
-cat <<EOF > main.go
 package main
 
 import (
@@ -28,4 +27,3 @@ func redHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "image/png")
 	png.Encode(w, img)
 }
-EOF
